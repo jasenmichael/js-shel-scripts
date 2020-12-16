@@ -1,0 +1,11 @@
+{
+  "name": "js-bash-scripts",
+  "type": "module",
+  "esm": {
+    "await": true
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "esm": "^3.2.25"
+  }
+}
