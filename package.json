@@ -11,6 +11,7 @@
   "homepage": "https://github.com/jasenmichael/js-shell-scripts",
   "dependencies": {
     "axios": "^0.21.0",
+    "cowsay": "^1.4.0",
     "esm": "^3.2.25"
   }
 }
