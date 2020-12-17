@@ -29,7 +29,7 @@ if [ "$(ls -A $INSTALLDIR 2>/dev/null)" ]; then
     exit 0
 
 else
-    mkdir $INSTALLDIR 2>/dev/null #echo ".js not empty,\r\n RUN: npx js-shell-script update" # hide if exist, TODO: check if empty
+    mkdir $INSTALLDIR 2>/dev/null #echo ".js not empty,\r\n
     cd $HOME/.js
     # clone into .js
     echo Installing jsss to ~/.js
