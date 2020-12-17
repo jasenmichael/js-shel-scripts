@@ -3,6 +3,6 @@ echo $1
 echo $2
 echo $3
 
-if [ $1 -eq 0 ]; then
-    echo "No arguments supplied"
+if [ -z "$1" ]; then
+    echo "No argument supplied"
 fi
