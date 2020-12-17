@@ -1,6 +1,6 @@
 ## run js scripts from terminal, using import and await out if box
 
-###features:
+### features:
 - automatically adds ~/.js to path in .bashrc and/or .zshrc
 - runs chmod +x on each script created
 - adds magic shebang to run each script with esm
