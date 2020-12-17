@@ -16,7 +16,9 @@ npx jasenmichael/js-shell-scripts#main
 
 restart the terminal and run
 ```bash
-hello
+google-status
+# or
+cowsay this is awesome
 ```
 this will run the sample script located at ~/.js/hello
 
