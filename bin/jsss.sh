@@ -7,7 +7,7 @@ INSTALLDIR=$HOME/.js
 REPO=$HOME/dev/js-shell-scripts
 
 # if --reinstall passed, delete dir
-if [ $1 = "--reinstall" ]; then
+if [ $@ ] && [ $1 = '--reinstall' ]; then
 
     read -p "Are you sure(this will remove ~/.js) (y/n)?" REPLY
     echo # (optional) move to a new line
@@ -25,7 +25,7 @@ if [ "$(ls -A $INSTALLDIR 2>/dev/null)" ]; then
     echo "$INSTALLDIR exits
     remove ~/.js and retry,
     or run
-    npx jsss --reinstall"
+    npx jasenmichael/js-shell-scripts   --reinstall"
     exit 0
 
 else
@@ -35,8 +35,6 @@ else
     echo Installing jsss to ~/.js
     git clone $REPO $INSTALLDIR 2>/dev/null # change name to js-shell-script
 fi
-
-echo $PWD
 
 echo "install dependencies"
 npm i 2>/dev/null

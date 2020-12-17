@@ -1,5 +1,7 @@
 if [ -z "$1" ]; then
     echo "No argument supplied"
+    echo Usage:
+    echo "  create-jsss my_script_name"
     exit 2
 else
     cp $HOME/.js/bin/boiler $HOME/.js/$1
