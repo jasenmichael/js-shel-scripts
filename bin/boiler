@@ -3,9 +3,7 @@
 
 // # above shebang is very important, you might need to tweek it, 
 // # should work as long as you installed in ~/.js, and you can run "node" or "nodejs" from terminal
+const args = process.argv.slice(2)
 
-import axios from "axios"
-const status = await axios.get('http://google.com').then(res=>res.status)
-
-console.log("args: ", process.argv.slice(2))
-console.log("status: ", status )
+console.log("args passed: ", args)
+// check out the google-status and cowsay as examples
