@@ -43,12 +43,12 @@ chmod +x $HOME/.js/hello
 
 # add source
 [ -f "$HOME/.bashrc" ] &&
-    echo "# Added by jasenmichael/js-shell-scripts" &&
+    echo '# Added by jasenmichael/js-shell-scripts' &&
     echo path+=~/.js >>"$HOME/.bashrc" 2>/dev/null &&
     echo "alias create-jsss='$INSTALLDIR/bin/create-jsss.sh'" >>"$HOME/.bashrc" 2>/dev/null
 
 [ -f "$HOME/.zshrc" ] &&
-    echo "# Added by jasenmichael/js-shell-scripts" &&
+    echo '# Added by jasenmichael/js-shell-scripts' &&
     echo path+=~/.js >>"$HOME/.zshrc" 2>/dev/null &&
     echo "alias create-jsss='$INSTALLDIR/bin/create-jsss.sh'" >>"$HOME/.zshrc" 2>/dev/null
 
