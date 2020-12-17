@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*": "javascript",
+        "*.md": "markdown",
+        "*.sh": "shellscript",
+        "*.json": "json"
+    }
+}
