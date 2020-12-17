@@ -11,7 +11,7 @@
 
 inslall with 
 ```bash
-npx jasenmichael/js-shel-scripts#main
+npx jasenmichael/js-shell-scripts#main
 ```
 
 restart the terminal and run
