@@ -1,12 +1,11 @@
 #!/bin/sh
 ':' //; NODE_PATH=$HOME/.js/node_modules ESM_OPTIONS="{mode:"auto",cache:0}" exec "$(command -v nodejs || command -v node)" --require=$HOME/.js/node_modules/esm "$0" "$@"
 
-// above shebang is very important, you might need to tweek it, 
-// should work as long as you installed in ~/.js, and you can run "node" or "nodejs" from terminal
+// # above shebang is very important, you might need to tweek it, 
+// # should work as long as you installed in ~/.js, and you can run "node" or "nodejs" from terminal
 
 import axios from "axios"
-let status = await axios.get('http://google.com').then(res=>res.status)
-// const data = "wazzuuuh!"
-// console.log("env: ", process.env )
-console.log( "args: ", process.argv.slice(2) )
+const status = await axios.get('http://google.com').then(res=>res.status)
+
+console.log("args: ", process.argv.slice(2))
 console.log("status: ", status )
