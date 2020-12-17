@@ -3,6 +3,7 @@
         "*": "javascript",
         "*.md": "markdown",
         "*.sh": "shellscript",
+        ".*shrc": "shellscript",
         "*.json": "json"
     }
 }
