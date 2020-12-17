@@ -1,26 +1,33 @@
 ## run js scripts from terminal, using import and await out if box
-### will run from any dir
+
+####features:
+- automatically adds ~/.js to path in .bashrc and/or .zshrc
+- runs chmod +x on each script created
+- adds magic shebang to run each script with esm
+- modules and top level await out of box for each created script.
+- will run from any dir by script name
+- no file extention needed
+
+
+inslall with 
 ```bash
-# from home dir
-cd ~/
-# create .js dir, and cd into
-mkdir && cd .js
-# clone into .js
-git clone this/repo .
-# install dependencies
-npm i
-# make hello executable
-chmod +x hello
-# add source
-[ -f "$HOME/.bashrc" ] && echo path+=~/.js >> "$HOME/.bashrc" && source "$HOME/.bashrc"
-[ -f "$HOME/.zshrc" ] && echo path+=~/.js >> .zshrc && source "$HOME/.zshrc"
+npx jasenmichael/js-shel-scripts#main
 ```
 
-now run hello from the terminal..
-
-copy and paste the hello file to any name and the make it executable
+restart the terminal and run
 ```bash
-chmod +x [your-script-name]
-# then run it with
-[your-script-name]
+hello
 ```
+this will run the sample script located at ~/.js/hello
+
+
+after installation you can run the below command to create another script
+```bash
+create-jss [script_name]
+```
+then run it immediatly with
+```bash
+[script_name]
+```
+
+

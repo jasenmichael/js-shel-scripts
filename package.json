@@ -1,9 +1,16 @@
 {
-  "name": "js-bash-scripts",
+  "name": "js-shell-scripts",
+  "version": "0.1.0",
+  "bin": {
+    "install": "bin/install.sh"
+  },
   "type": "module",
   "esm": {
     "await": true
   },
+  "author": "jasenmichael",
+  "license": "MIT",
+  "homepage": "https://github.com/jasenmichael/js-shell-scripts",
   "dependencies": {
     "axios": "^0.21.0",
     "esm": "^3.2.25"
