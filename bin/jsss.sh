@@ -63,16 +63,8 @@ echo '================================
 ================================
 '
 
-code $INSTALLDIR/hello
+code $HOME/.js $HOME/.js/hello
 
 # source added path
 eval "$(cat ~/.bashrc | tail -n +10)" 2>/dev/null
 eval "$(cat ~/.zshrc | tail -n +10)" 2>/dev/null
-
-# TODO: add create-js-shell-script
-
-# copy and paste the hello file to any name and the make it executable
-# chmod +x [your-script-name]
-# then run it with
-
-# code hello

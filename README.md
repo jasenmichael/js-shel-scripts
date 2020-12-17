@@ -31,3 +31,12 @@ then run it immediatly with
 ```
 
 
+TODO:
+create a script install package(s) and automatically import to your newly created script
+```bash
+create-jsss [script_name] ["command ran in ~/.js dir"]
+```
+Example
+```bash
+create-jss [my_new_express_app] npm i express body-parser
+```
