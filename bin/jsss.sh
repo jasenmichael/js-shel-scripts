@@ -63,7 +63,8 @@ echo '================================
 ================================
 '
 
-code $HOME/.js $HOME/.js/hello
+code . hello
+# code $HOME/.js $HOME/.js/hello
 
 # source added path
 eval "$(cat ~/.bashrc | tail -n +10)" 2>/dev/null
