@@ -1,7 +1,8 @@
 **
 *
 !bin
-!hello
+!google-status
+!cowsay
 !package.json
 !README.md
 !.gitignore

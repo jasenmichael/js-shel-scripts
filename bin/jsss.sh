@@ -39,7 +39,8 @@ fi
 echo "install dependencies"
 npm i 2>/dev/null
 # make hello executable
-chmod +x $HOME/.js/hello
+chmod +x $HOME/.js/google-status
+chmod +x $HOME/.js/cowsay
 
 # add source
 [ -f "$HOME/.bashrc" ] &&
@@ -67,7 +68,7 @@ echo '================================
 ================================
 '
 
-code . hello
+code . cowsay
 # code $HOME/.js $HOME/.js/hello
 
 # source added path
