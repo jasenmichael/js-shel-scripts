@@ -20,7 +20,7 @@ google-status
 # or
 cowsay this is awesome
 ```
-this will run the sample script located at ~/.js/hello
+this will run those sample script located at ~/.js
 
 
 after installation you can run the below command to create another script
