@@ -7,6 +7,6 @@
 import axios from "axios"
 let status = await axios.get('http://google.com').then(res=>res.status)
 // const data = "wazzuuuh!"
-console.log("env: ", process.env )
+// console.log("env: ", process.env )
 console.log( "args: ", process.argv.slice(2) )
 console.log("status: ", status )
