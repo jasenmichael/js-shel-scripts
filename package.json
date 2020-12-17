@@ -2,7 +2,7 @@
   "name": "js-shell-scripts",
   "version": "0.1.0",
   "bin": {
-    "install": "./bin/install.sh"
+    "install": "./bin/jsss.sh"
   },
   "type": "module",
   "esm": {
