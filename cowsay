@@ -1,0 +1,18 @@
+#!/bin/sh
+':' //; NODE_PATH=$HOME/.js/node_modules ESM_OPTIONS="{mode:"auto",cache:0}" exec "$(command -v nodejs || command -v node)" --require=$HOME/.js/node_modules/esm "$0" "$@"
+
+// # above shebang is very important, you might need to tweek it, 
+// # should work as long as you installed in ~/.js, and you can run "node" or "nodejs" from terminal
+import cowsay from "cowsay"
+
+const text = process.argv.slice(2).length ?
+    process.argv.slice(2).join(' ') :
+    "JAVASCRIPT IS AWESOME!"
+ 
+console.log(cowsay.say({
+	text,
+	e : "oO",
+    T: "U ",
+    mode: "s",
+    r: true
+}))
