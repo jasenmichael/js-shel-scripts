@@ -1,8 +1,8 @@
-node_modules
-// .vscode
-package-lock.json
-
 **
 *
 !bin
 !hello
+!package.json
+!README.md
+!.gitignore
+!.git
